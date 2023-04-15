@@ -13,8 +13,7 @@ header {
     align-items: center;
     background-color: rgb(166, 247, 220);
     color: rgb(56, 56, 56);
-    
-    
+    padding: 20px 0;
 }
 nav ul {
     display: flex;
@@ -25,7 +24,7 @@ nav ul {
 nav li {
     list-style-type: none;
     margin: 10px;
-    font-size: 20px;
+    font-size: 24px;
 }
 section {
     width: 80%;
