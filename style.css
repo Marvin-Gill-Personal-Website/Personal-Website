@@ -73,6 +73,11 @@ textarea:hover {
   input[type="submit"]:hover {
     background-color: #3e8e41;
   }
+
+  @media only screen and (max-width: 480px) {
+    /* for smartphone screens */
+  }
+  
   
   
   
