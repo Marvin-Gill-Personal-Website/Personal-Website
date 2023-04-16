@@ -7,15 +7,14 @@ form.addEventListener('submit', e => {
   e.preventDefault()
   let requestBody = new FormData(form)
   fetch(scriptURL, { method: 'POST', body: requestBody})
-    .then(response => response.json())
-    .then(data => {
-      console.log(data)
-      alert('Success!')
-      submitButton.disabled = false
-    })
+    .then(response => {
+       alert('Success!', response)
+       submitButton.disabled = false
+      })
     .catch(error => {
-      console.error(error)
-      alert('Error!')
+    alert('Error!', error.message)
       submitButton.disabled = false
-    })
+
+    }
+    )
 })
